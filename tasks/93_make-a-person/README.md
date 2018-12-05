@@ -42,8 +42,6 @@ Here are some helpful links:
 
 Test suits:
 
-Object.keys(bob).length should return 6.
-
 bob instanceof Person should return true.
 
 bob.firstName should return undefined.
