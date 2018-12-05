@@ -1,0 +1,56 @@
+.accordionItemHeading{
+    position: relative;
+    display: flex;
+    cursor:pointer;
+    margin:0px 0px 10px 0px;
+    padding:10px;
+    box-sizing: border-box;
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid #e5e5e5;
+    width: 600px;
+}
+
+.close .accordionItemContent{
+    height:0px;
+    transition:height 1s ease-out;
+    transform: scaleY(0);
+    float:left;
+    display:block;
+}
+
+.open .accordionItemContent{
+    width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #999999;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0px 0px 10px 0px;
+    display:block;
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.4s ease;
+    box-sizing: border-box;
+}
+
+.open .accordionItemHeading{
+    margin-bottom: 12px;
+    color: #7f8c8d;
+}
+
+.title-accardion {
+    margin-left: 20px;
+}
+
+i {
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
+}

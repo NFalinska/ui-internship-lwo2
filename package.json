@@ -5,7 +5,9 @@
   "scripts": {
     "test": "jest",
     "lint": "./node_modules/.bin/eslint tasks/**/*.js",
-    "tdd": "jest --watch"
+    "tdd": "jest --watch",
+    "watch:sass": "node-sass -w task_3/scss/ -o task_3/css/",
+    "compile:sass": "node-sass task_3/scss/ -o task_3/css/"
   },
   "husky": {
     "hooks": {
@@ -23,5 +25,9 @@
     "husky": "^1.1.2",
     "jest": "^21.1.0",
     "regenerator-runtime": "^0.11.0"
+  },
+  "dependencies": {
+    "node-sass": "^4.10.0",
+    "sass": "^1.15.1"
   }
 }
