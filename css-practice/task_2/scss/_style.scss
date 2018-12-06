@@ -8,13 +8,27 @@
   max-width: 1440px;
   min-width: 960px;
   margin: auto;
-    header{
-      background: url(../img/bg-photo.png); 
-      background-size: cover;
+
+    header {
       height: 814px;
       @include flex-prefix;
       display: flex;
       justify-content: center;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        width: auto;
+        height: auto; 
+        z-index: -1;
+      }
+
       .main-info {
         margin-top: 220px;
         @include flex-prefix;
@@ -22,20 +36,32 @@
         align-items: center;
         flex-direction: column;
       }
+
       h1 {
         font-family: $titleFont;
         color: $mainColor;
         font-size: 60px;
         line-height: 75px;
         letter-spacing: 3px;
+        z-index: 1;
       }
+
       .play {
-        margin-top: 38px;
-        width: 59px;
-        height: 59px;
+        background-image: url(../img/music-play.png);
       }
-    
-      button {
+
+      .play, .paused {
+        margin-top: 38px;
+        width: 62px;
+        height: 59px;
+        z-index: 1;
+      }
+
+      .paused {
+        background-image: url(../img/music-pause.png);
+      }
+
+      .try {
         width: 190px;
         height: 50px;
         margin: 36px 0px 16px 0px;
@@ -43,13 +69,16 @@
         background-color: $colorDecor;
         border: $colorDecor;
         color: $fonColor;
-        cursor: pointer;
         font-size: 16px;
         letter-spacing: 2px;
+        z-index: 1;
+        cursor: pointer;
       }
+
       .button {
         margin-top: 10px;
       }
+
       .cards-details {
         color: $mainColor;
         font-family: Exo;
@@ -107,6 +136,7 @@ h2 {
   line-height: 50px;
   word-spacing: -4px;
   letter-spacing: 1.6px;
+
   span {
     color: $colorDecor;
   }
@@ -204,9 +234,11 @@ h2 {
 
 .text-responsive {
   margin: 140px 200px 116px 50px;
+
   .label {
     margin-bottom: 15px;
   }
+
   .text {
   margin-top: 30px;
   }
@@ -253,10 +285,11 @@ h2 {
 }
 
 .position {
-color: $colorDecor;
-font-size: 16px;
+  color: $colorDecor;
+  font-size: 16px;
 
 }
+
 .pic-about {
   margin: 110px 0px 80px 0px;
   height: 85px;
@@ -307,20 +340,24 @@ font-size: 16px;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+
   h2 {
     margin: 6px 10px 30px 0px;
     color: $fonColor;
   }
+
   .limit {
     margin-left: 880px;
     color: $fonColor;
     position: relative;
   }
+
   .limit::before {
     content: url(../img/ARROW.png);
     position: absolute;
     left: -38px;
   }
+
   input {
     margin-right: 30px;
     padding-left: 10px;
@@ -330,6 +367,7 @@ font-size: 16px;
     width: 250px;
     height: 44px;
     opacity: 0.5;
+    outline: none;
   }
 
   input::-webkit-input-placeholder { 
@@ -337,11 +375,11 @@ font-size: 16px;
     font-weight: bold;
   }
 
-  button {
+  #send-btn {
     width: 262px;
     height: 50px;
     -webkit-box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
-            box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
+    box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
     border-radius: 3px;
     color: $fonColor;
     border: 1px solid $colorDecor;
@@ -362,6 +400,7 @@ font-size: 16px;
     opacity: 0.6;
     line-height: 75px;
     letter-spacing: 0.64px;
+
     span {
     text-decoration: underline;
     }
@@ -391,6 +430,7 @@ font-size: 22px;
 display: flex;
 justify-content: space-around;
 letter-spacing: 0.88px;
+
 img {
   margin-top: -10px;
 }
@@ -408,6 +448,7 @@ letter-spacing: 0.56px;
 .input-wrapper{
   position: relative;
   margin: 20px 0px 20px 0px;
+
   input {
     width: 263px;
     height: 49px;
@@ -416,6 +457,7 @@ letter-spacing: 0.56px;
     background-color: #8d8d8d;
     opacity: 0.4;
   }
+
   input::-webkit-input-placeholder { 
     color: #000000;
     padding-left: 30px;
@@ -431,7 +473,7 @@ letter-spacing: 0.56px;
   width: 52px;
   height: 49px;
   -webkit-box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
-          box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
+  box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
   border-radius: 3px;
   border: 1px solid $colorDecor;
   background-color: $colorDecor;
@@ -446,7 +488,24 @@ letter-spacing: 0.56px;
     @include flex-prefix;
     display: flex;
     justify-content: space-around;
+
     img {
       cursor: pointer;
     }
+}
+
+.valid {
+  background-color: white;
+  box-shadow: 5px 5px 10px green;
+  border-color: #28921f;
+}
+
+ .invalid {
+  box-shadow: 5px 5px 10px #d45252;
+  border-color: #b03535;
+}
+
+.disabled {
+  cursor: not-allowed; 
+  opacity: 0.7;
 }
