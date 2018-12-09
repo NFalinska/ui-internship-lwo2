@@ -1,0 +1,243 @@
+body {
+  margin: auto;
+  max-width: 1200px;
+  min-width: 700px; 
+}
+
+h2 {
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+h2, .text, button, .singup {
+  font-family: 'Playfair Display', serif;
+}
+
+nav a, .text, h2, .about, button {
+  color: #626262;
+}
+
+.description, .about .name, .about .comment{
+  color: #b4ad9e;
+} 
+
+.register, .register input, footer {
+  background-color: #f0f0f0;
+}
+
+/*HEADER*/
+
+header, nav {
+  margin: 0 70px 0 70px;
+}
+
+header {
+  margin-top: 72px;
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+}
+
+nav img {
+  margin-right: 265px;
+}
+
+nav a {
+  margin: 2px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  height: 12px;
+}
+
+/*ABOUT*/
+
+.about {
+  margin-top: 20px;
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;  
+}
+
+.about .name {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.about .comment {
+  font-size: 14px;
+  margin: 45px 0 128px 0;
+}
+
+.about .title {
+  margin-bottom: 34px;
+  width: 408px;
+  height: 30px;
+  font-size: 30px;
+  font-weight: 400;
+}
+ 
+/*MAIN*/
+
+main {
+  margin-top: 90px;
+  padding: 0 150px 0 150px;
+}
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+section {
+  margin: 0 10px 128px 0;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -ms-flex-wrap: wrap;
+}
+
+article {
+  width: 410px;
+}
+
+.description {
+  margin-top: 25px;
+  width: 85px;
+  height: 12px;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/*REGISTER*/
+
+.register {
+  margin: -8px -150px 105px -150px;
+  height: 287px;
+} 
+
+.singup {
+  margin-top: 63px;
+  font-size: 30px;
+  word-spacing: 3px;
+  color: #333333;
+}
+
+.register input {
+  margin-top: 65px;
+  text-align: left;
+  width: 399px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+button {
+  width: 164px;
+  height: 60px;
+  font-size: 20px;
+  border: 1px solid #626262;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+  margin-top: 160px;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+}
+
+.register-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+}
+
+
+input::-webkit-input-placeholder { 
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+ .input-wrapper {
+  position: relative;
+} 
+
+.input-wrapper::after {
+  content: url(images/send_icon.png);
+  margin: -30px 30px 0 0;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 0;
+}
+
+/*FOOTER*/
+
+footer {
+  height: 97px;
+  display: flex;
+  justify-content: space-between;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+}
+
+.follow {
+  margin: 27px 60px 0 0;
+  display: flex;
+  justify-content: flex-end;
+ 
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+}
+
+footer a {
+  margin: 10px;
+  color: #000;
+}
+
+.doc {
+  margin: 38px 0 0 140px;
+}
+ 
+/*MEDIA*/
+
+  @media only screen and (max-width: 800px) {
+  nav img {
+      margin-right: 80px; 
+  }
+}  

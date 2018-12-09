@@ -1,0 +1,27 @@
+// FONTS
+@font-face {
+    font-family: titleFont;
+    src: url(../fonts/Exo-Thin.ttf);
+}
+
+// FONTS
+$titleFont: titleFont;
+
+// COLORS
+
+$mainColor:  #282828;
+$labelColor: red;
+$colorDecor: #ff6d6d;
+$fonColor: #ffffff;
+$bgColor: #f6f5f3;
+
+@mixin flex-prefix {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+
+

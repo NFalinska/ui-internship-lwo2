@@ -1,0 +1,708 @@
+@media only screen and (max-width: 1024px) {
+    header {
+        .slider {
+            display: none;
+        }
+        
+        .logo {
+            padding-left: 11px;
+        }
+
+        .main-title {
+            padding: 24px 100px 44px 100px;
+            font-size: 72px;
+        }
+
+        .pages {
+          margin-left: 0px;
+          padding-top: 4px;
+          padding-right: 15px;
+          display: flex;
+        }
+    }
+
+
+    .about {
+      .pics {
+        img {
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    .text {
+      margin: 40px 140px 0px 124px;
+      }
+   
+  .quotes {
+      .img-quotes {
+         margin: 0px 55px 28px 0px;
+      }
+
+      .arrow {
+          display: none;
+      }
+  }
+
+  .reviews {
+      padding-right: 0px;
+      padding-left: 0px;
+  }
+    .services {
+      .silver-line {
+        display: none;
+      }
+
+      .services-blocks {
+        margin-top: 60px;
+       margin-right: 0px; 
+        display: flex;
+        justify-content: center;
+    }
+     
+    .block-one, .block-two {
+      display: flex;
+      flex-direction: column;
+      margin-left: 39px;
+      }
+
+      .block-two {
+        margin-top: 0px;
+      }
+
+      .block-one {
+        margin-bottom: 0px;
+      }
+    
+
+}
+
+.design {
+  .iphone {
+    position: absolute;
+    left: 454px;
+    margin-top: 240px;
+  }
+  .ipad {
+    margin-left: 65px;
+    margin-top: 42px;
+    position: relative;
+  }
+}
+
+.what-we-do {
+  img {
+    display: none;
+  }
+
+  .work {
+      margin-left: 155px;
+      flex-wrap: wrap;
+  }
+
+  .tab-image {
+      margin-left: 55px;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 28px;
+    margin-right: 215px;
+    padding-top: 20px;
+  }
+}
+
+.team {
+  padding-bottom: 0px;
+}
+.partners {
+  display: none;
+}
+
+.gallery-photos {
+  img {
+    width: 100%;
+  }
+}
+.blog {
+   .people{
+      padding-left: 210px;
+   }
+}
+
+.review-people-say  {
+  display: none;
+}
+
+.stories {
+    .pics {
+      flex-wrap: wrap;
+      margin: 44px 145px 0px 145px;
+    }
+    .pic-item {
+        padding-bottom: 30px;
+    }
+
+    .stories-pic {
+      width: 600px;
+    }
+}
+ footer {
+     padding-right: 0px;
+     .blocks {
+         display: flex;
+         flex-wrap: wrap;
+     }
+
+     .block-two {
+      margin-right: 130px;
+     }
+
+     .title-block {
+         padding-top: 24px;
+     }
+
+     .blog-photo {
+      margin-bottom: 12px;
+      margin-right: 12px;
+     }
+
+     .blog-info {
+         padding-top: 0px;
+     }
+
+     .title-blog {
+      padding-top: 20px;
+     }
+
+     .title-item {
+         width: 190px;
+     }
+
+     .main-footer-line {
+         display: none;
+     }
+ }
+}
+@media only screen and (max-width: 1340px) {
+    .partners {
+        display: none;
+    }
+
+    .services .silver-line {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+  header {
+      .slider {
+          display: none;
+      }
+
+      nav {
+          padding: 28px 0px 85px 12px;
+          
+          a {
+              font-size: 10px;
+          }
+      }
+
+      .logo {
+          padding-left: 11px;
+      }
+
+      .main-title {
+          padding: 24px 100px 44px 100px;
+          font-size: 72px;
+      }
+
+      .pages {
+        margin-left: 0px;
+        padding-top: 4px;
+        padding-right: 15px;
+        display: flex;
+      }
+  }
+
+  .quotes {
+    display: none;
+  }
+
+  .reviews {
+    display: none;
+  }
+
+  .about {
+    .pics {
+      img {
+        padding-bottom: 20px;
+      }
+    }
+
+    .text-item {
+        font-size: 12px;
+    }
+
+    .all {
+      margin-top: 35px;
+    }
+  }
+
+  .text {
+    margin: 40px 140px 0px 124px;
+    }
+ 
+.quotes {
+    .img-quotes {
+        margin: 0px 55px 176px 0px
+    }
+}
+
+.reviews {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+  .services {
+    .silver-line {
+      display: none;
+    }
+
+    .services-blocks {
+      margin-top: 60px;
+      margin-left: 0px; 
+      margin-right: 0px; 
+      display: flex;
+      justify-content: center;
+  }
+   
+  .block-one, .block-two {
+    display: flex;
+    flex-direction: column;
+    margin-left: 39px;
+    }
+
+    .block-two {
+      margin-top: 0px;
+      margin-right: 50px;
+    }
+
+    .block-one {
+      margin-bottom: 0px;
+      margin-left: 50px;
+    }
+
+    .block-text {
+        font-size: 12px;
+    }
+
+    .block-name {
+        font-size: 12px;
+    }
+  
+
+}
+
+.design {
+.iphone {
+  position: absolute;
+  left: 454px;
+  margin-top: 240px;
+}
+.ipad {
+  margin-left: 65px;
+  margin-top: 42px;
+  position: relative;
+}
+}
+
+.what-we-do {
+img {
+  display: none;
+}
+
+.work {
+  margin-left: 55px;
+}
+}
+
+.team {
+padding-bottom: 0px;
+}
+.partners {
+display: none;
+}
+
+.gallery-photos {
+img {
+  width: 100%;
+}
+}
+.blog {
+ .people{
+    padding-left: 120px;
+ }
+}
+
+.review-people-say  {
+display: none;
+}
+
+.stories {
+  .pics {
+    flex-wrap: wrap;
+    margin: 44px 145px 0px 145px;
+  }
+  .pic-item {
+      padding-bottom: 30px;
+  }
+
+  .stories-pic {
+    width: 500px;
+  }
+}
+footer {
+   padding-right: 0px;
+   .blocks {
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   .block-two {
+       margin-right: 0px;
+   }
+
+   .title-block {
+       padding-top: 24px;
+   }
+
+   .blog-photo {
+    margin-bottom: 12px;
+    margin-right: 12px;
+   }
+
+   .blog-info {
+       padding-top: 0px;
+   }
+
+   .title-blog {
+    padding-top: 20px;
+   }
+
+   .title-item {
+       width: 190px;
+   }
+}
+}
+
+@media only screen and (max-width: 425px) {
+     header {
+          height: 700px;
+         .pages {
+             display: none;
+         }
+
+         .title {
+            font-size:  54px;
+         }
+
+         .main-title {
+          padding: 24px 62px 44px 48px;
+          font-size: 62px;
+          line-height: 60px; 
+          letter-spacing: 0px; 
+         }
+     }
+
+     .text {
+      margin: 40px 40px 0px 24px;
+     }
+
+    .about .projects {
+      margin: 10px auto 0px;
+         .item {
+             padding-top: 0px;
+             padding-bottom: 10px;
+         }
+
+         .number {
+             font-size: 42px;
+         }
+     }
+
+     .services {
+         .services-blocks {
+          flex-direction: column;
+         }
+
+         .block-one {
+             margin-left: 40px;
+         }
+
+         .block-name {
+             font-weight: 500;
+         }
+     }
+
+     .design {
+         height: 600px;
+         .iphone {
+          left: 224px;
+          margin-top: 196px;
+          width: 130px;
+         }
+
+         .ipad {
+          margin-left: 65px;
+          margin-top: 130px;
+          width: 200px;
+         }
+     }
+
+     .what-we-do {
+         .work {
+             margin-left: 18px;
+         }
+
+         .inputs {
+             margin-left: 0px;
+
+             input {
+              width: 380px;
+          }
+         }  
+     }
+
+     .quotes {
+         padding-bottom: 0px;
+         padding-left: 0px;
+         padding-right: 0px;
+         .img-quotes {
+            margin: 0px 34px 126px 0px;
+          padding: 30px 26px 26px 30px;
+         }
+
+         .text-quotes {
+          font-size: 18px;
+         }
+     }
+
+     .reviews {
+      padding-left: 78px;
+      flex-direction: column;
+      
+      .arrow {
+          display: none;
+      }
+     }
+
+     .blog {
+         .people-one, .people-two {
+             flex-wrap: wrap;
+         }
+
+         .people-one {
+             padding-bottom: 0px;
+         }
+     }
+
+     .stories {
+         .stories-pic {
+             width: 350px;
+         }
+
+         .pics {
+          margin: 44px 108px 0px 150px;
+         }
+     }
+
+     footer {
+         padding-left: 20px;
+     }
+  }
+
+  @media only screen and (max-width: 375px) {
+       header {
+          .title {
+              font-size: 50px;
+          }
+  
+          .main-title {
+              font-size: 48px;
+          }
+       }
+    
+       .text {
+          margin: 40px 0px 0px 5px;
+       }
+
+       .about {
+           .pics {
+              justify-content: space-evenly;
+              margin: 30px 0px 0px 10px;
+              
+              img {
+                  width: 150px;
+                  height: 120px;
+              }
+           }
+       }
+
+       .what-we-do {
+           .inputs {
+               input {
+                   width: 320px;
+               }
+           }
+       }
+
+       .quotes {
+          padding-left: 10px;
+          padding-top: 30px;
+
+          .img-quotes {
+              padding: 22px 26px 16px 21px;
+
+              img {
+                  width: 30px;
+              }
+          }
+       }
+
+       .team {
+           .person {
+               img {
+                   width: 300px;
+               }
+           }
+       }
+
+       .reviews {
+          padding-left: 42px;
+          
+          .text-quotes {
+              font-size: 20px;
+          }
+       }
+
+       .blog {
+           padding-left: 10px;
+       }
+
+       .stories {
+           .pic-item {
+              margin-left: 10px;
+              .stories-pic {
+                   width: 300px;
+               }
+
+               .pic-line {
+                   display: none;
+               }
+           }
+       }
+       
+       footer {
+             input {
+                 width: 200px;
+             }
+
+             button {
+                 width: 130px;
+             }
+
+             .footer-line {
+                 display: none;
+             }
+       }
+       
+  }
+  
+  @media only screen and (max-width: 320px) {
+      header {
+          height: 620px;
+          .title {
+             font-size: 40px;
+          }
+
+          .main-title {
+              font-size: 38px;
+          }
+      }
+
+      .text {
+          margin: 38px 0px 0px 10px;
+      }
+
+      .about {
+          .pics img {
+          padding-bottom: 5px;
+          }
+
+          .number {
+              font-size: 36px;
+          }
+      }
+
+      .services {
+          .block-text {
+              display: none;
+          }
+      }
+
+      .what-we-do {
+          .inputs {
+              input {
+                  width: 280px;
+              }
+          }
+      }
+
+      .quotes {
+          .img-quotes {
+              margin: 0px 34px 280px 0px;
+          }
+
+          .text-quotes {
+              font-size: 16px;
+              line-height: 30px;
+          }
+      }
+      .design {
+          height: 482px;
+          .ipad {
+             margin-left: 30px;
+             margin-top: 12px;
+             width: 200px;
+          }
+          
+          .iphone {
+              left: 180px;
+              margin-top: 78px;
+              width: 130px;
+          }
+      }
+      .blog {
+          padding-left: 10px;
+          .people {
+              padding-left: 20px;
+
+          }
+      }
+
+      footer {
+          .block-one {
+            margin-right: 0px;
+          }
+          .icons img {
+              margin-left: 10px;
+          }
+          input {
+              width: 168px;
+          } 
+
+          button {
+              width: 110px;
+          }
+      }
+  }
