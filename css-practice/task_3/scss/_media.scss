@@ -21,6 +21,7 @@
         }
     }
 
+
     .about {
       .pics {
         img {
@@ -96,6 +97,19 @@
 
   .work {
       margin-left: 155px;
+      flex-wrap: wrap;
+  }
+
+  .tab-image {
+      margin-left: 55px;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 28px;
+    margin-right: 215px;
+    padding-top: 20px;
   }
 }
 
@@ -209,6 +223,14 @@
         padding-right: 15px;
         display: flex;
       }
+  }
+
+  .quotes {
+    display: none;
+  }
+
+  .reviews {
+    display: none;
   }
 
   .about {
