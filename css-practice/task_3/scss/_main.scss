@@ -612,14 +612,17 @@
       .main-title {
           padding-bottom: 22px;
       }
-  
+
       .pics {
-          display: flex;
-          justify-content: space-around;
-          margin: 44px 106px 0px 100px;
-      }
-  
-       
+        margin: 96px 106px 0px 100px;
+        display: grid;
+        grid-template-columns: 430px 430px 430px;
+    }
+
+    .stories-pic {
+        height: 250px;
+    }
+         
          .pic-date {
             width: 54px;
             height: 60px;
@@ -652,6 +655,8 @@
           text-transform: uppercase;
           padding-top: 16px;
           padding-bottom: 10px;
+          height: 28px;
+          overflow: hidden;
       }
   
       .pic-text {
@@ -659,6 +664,8 @@
           font-family: $textFont;
           font-size: 15px;
           line-height: 24px;
+          height: 46px;
+          overflow: hidden;
       }
       
       .pic-item {
@@ -667,6 +674,7 @@
           margin-left: 16px;
           margin-right: 15px;
           position: relative;
+          margin-bottom: 45px;
       }
   
       .seen {
@@ -721,9 +729,14 @@
           display: flex;
       } 
 
-      .block-one, .block-two, .block-three {
+      .block-one, .block-three {
           display: flex;
           flex-direction: column;
+      }
+
+      .block-two {
+        height: 400px;
+        overflow-y: auto;
       }
       .block-one {
           margin-right: 48px;
@@ -795,6 +808,8 @@
         font-size: 12px;
         line-height: 18px;
         text-transform: uppercase;
+        height: 40px;
+        overflow: hidden;
       }
   
       .date {
@@ -808,6 +823,10 @@
       .blog-photo {
           margin-bottom: 28px;
           margin-right: 20px;
+          img {
+            height: 80px;
+            width: 120px;
+          }
       }
   
       .insta {
@@ -824,6 +843,7 @@
   
       .block-two {
           margin-right: 80px;
+          width: 1300px;
       }
   
       .followers {

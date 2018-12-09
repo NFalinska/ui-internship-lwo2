@@ -444,9 +444,11 @@ header {
   .stories .main-title {
     padding-bottom: 22px; }
   .stories .pics {
-    display: flex;
-    justify-content: space-around;
-    margin: 44px 106px 0px 100px; }
+    margin: 96px 106px 0px 100px;
+    display: grid;
+    grid-template-columns: 430px 430px 430px; }
+  .stories .stories-pic {
+    height: 250px; }
   .stories .pic-date {
     width: 54px;
     height: 60px;
@@ -473,18 +475,23 @@ header {
     font-size: 14px;
     text-transform: uppercase;
     padding-top: 16px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    height: 28px;
+    overflow: hidden; }
   .stories .pic-text {
     color: #999999;
     font-family: Roboto;
     font-size: 15px;
-    line-height: 24px; }
+    line-height: 24px;
+    height: 46px;
+    overflow: hidden; }
   .stories .pic-item {
     display: flex;
     flex-direction: column;
     margin-left: 16px;
     margin-right: 15px;
-    position: relative; }
+    position: relative;
+    margin-bottom: 45px; }
   .stories .seen {
     display: flex;
     color: #999999;
@@ -525,9 +532,12 @@ footer {
   padding-right: 122px; }
   footer .blocks {
     display: flex; }
-  footer .block-one, footer .block-two, footer .block-three {
+  footer .block-one, footer .block-three {
     display: flex;
     flex-direction: column; }
+  footer .block-two {
+    height: 400px;
+    overflow-y: auto; }
   footer .block-one {
     margin-right: 48px; }
   footer .title-blog {
@@ -580,7 +590,9 @@ footer {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     line-height: 18px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    height: 40px;
+    overflow: hidden; }
   footer .date {
     color: #999999;
     font-family: Roboto;
@@ -590,6 +602,9 @@ footer {
   footer .blog-photo {
     margin-bottom: 28px;
     margin-right: 20px; }
+    footer .blog-photo img {
+      height: 80px;
+      width: 120px; }
   footer .insta {
     display: flex;
     flex-direction: column; }
@@ -598,7 +613,8 @@ footer {
   footer .block-insta {
     display: flex; }
   footer .block-two {
-    margin-right: 80px; }
+    margin-right: 80px;
+    width: 1300px; }
   footer .followers {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
