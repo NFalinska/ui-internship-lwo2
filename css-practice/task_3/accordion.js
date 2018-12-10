@@ -5,15 +5,25 @@
     accHead[i].addEventListener('click', toggleItem, false);
   }
 })();
-
 function toggleItem() {
-  const accItem = document.getElementsByClassName('accordion-item');
-  let itemClass = this.parentNode.className;
-  for (let i = 0; i < accItem.length; i++) {
-    accItem[i].className = 'accordion-item close';
-  }
-  if (itemClass == 'accordion-item close') {
-    this.parentNode.className = 'accordion-item open';
+  this.isOpened = this.parentNode.classList.contains('open');
+
+  const closeItem = (node) => {
+    node.classList.remove('open');
+    node.classList.add('close');
+  };
+
+  const _toArray = (list) => [].slice.call(list);
+
+  const array = _toArray(document.getElementsByClassName('accordion-item'));
+
+  array.forEach(closeItem);
+
+  if (this.isOpened) {
+    closeItem(this.parentNode);
+  } else {
+    this.parentNode.classList.add('open');
+    this.parentNode.classList.remove('close');
   }
 }
 
