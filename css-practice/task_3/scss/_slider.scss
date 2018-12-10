@@ -20,3 +20,12 @@
 .arrow-right-one, .arrow-left-one, .arrow-right-two, .arrow-left-two {
     cursor: pointer;
 }
+
+.scroller {
+	display: flex;
+}
+
+#review_slider, #quotes_slider {
+	overflow: hidden;
+	display: flex;
+}

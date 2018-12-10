@@ -13,8 +13,8 @@
 }
 
 .close .accordion-item-content{
-    height:0px;
-    transition:height 1s ease-out;
+    height: 0px;
+    transition: height 0.4s linear;
     transform: scaleY(0);
     float:left;
     display:block;
