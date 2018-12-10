@@ -74,6 +74,7 @@ header {
     display: flex;
     padding: 28px 0px 158px 120px;
     max-width: 1440px;
+    padding-right: 102px;
     margin: auto; }
     header nav a {
       color: #ffffff;
@@ -89,8 +90,8 @@ header {
     background-color: rgba(232, 131, 130, 0.8);
     border: none;
     position: fixed;
-    padding-right: 102px;
     padding-bottom: 30px;
+    padding-right: 102px;
     z-index: 2; }
   header .title {
     font-size: 72px; }
@@ -1083,10 +1084,15 @@ footer {
 
 .close .accordion-item-content {
   height: 0px;
-  transition: height 0.4s linear;
+  transition: height, transform 0.4s linear;
   transform: scaleY(0);
   float: left;
-  display: block; }
+  display: block;
+  color: #999999;
+  font-family: Roboto;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px; }
 
 .open .accordion-item-content {
   padding: 20px;

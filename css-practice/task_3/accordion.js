@@ -17,14 +17,9 @@ function toggleItem() {
 document.querySelector('.tabs-header').addEventListener('click', changeTabs);
 
 function changeTabs(event) {
-  const dataTab = event.target.getAttribute('data-tab');
-  const noActive = document.getElementsByClassName('accordion-item-heading');
-  const tabBody = document.getElementsByClassName('tab-b');
   if (event.target.className == 'accordion-item-heading') {
-    for (let i = 0; i < noActive.length; i++) {
-      noActive[i].classList.remove('current');
-    }
-    event.target.classList.add('current');
+    const dataTab = event.target.getAttribute('data-tab');
+    const tabBody = document.getElementsByClassName('tab-b');
     for (let i = 0; i < tabBody.length; i++) {
       if (dataTab == i) {
         tabBody[i].style.display = 'block';

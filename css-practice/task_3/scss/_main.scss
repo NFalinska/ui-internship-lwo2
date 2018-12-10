@@ -92,6 +92,7 @@
         display: flex;
         padding: 28px 0px 158px 120px; 
         max-width: 1440px;
+        padding-right: 102px;
         margin: auto;
     
         a {
@@ -105,16 +106,16 @@
           color: #fce38a; 
           border-bottom: 2px solid #fce38a;
           padding-bottom: 12px;
-        }
-        }
+            }
+          }
         }
     
         .fixed-header  {
           background-color: rgba(232, 131, 130, 0.8);
           border: none;
           position: fixed;
-          padding-right: 102px;
           padding-bottom: 30px;
+          padding-right: 102px;
           z-index: 2;
       }
   
@@ -167,7 +168,7 @@
           font-family: $mainFont;
           font-size: 24px;
           font-weight: 700;
-      }
+         }
       }
   }
   
@@ -395,8 +396,7 @@
             background-position-x: 14px;
             background-position-y: 12px;
             background-repeat: no-repeat; 
-        }
-      
+        }     
     }
 }
   
@@ -537,6 +537,7 @@
           line-height: 36px;
           padding-bottom: 6px;
       }
+
       .author { 
           color: $titleColor;
           font-family: "Kaushan Script";
@@ -626,6 +627,7 @@
   
   .stories {
       padding-bottom: 110px;
+
       .title {
           padding-top: 104px; 
           padding-bottom: 10px;
@@ -707,7 +709,6 @@
           padding-top: 4px;
           padding-bottom: 11px;
       }
-  
   }
   
   .map {

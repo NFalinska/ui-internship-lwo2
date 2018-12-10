@@ -12,12 +12,17 @@
     border: 1px solid #e5e5e5;
 }
 
-.close .accordion-item-content{
+.close .accordion-item-content {
     height: 0px;
-    transition: height 0.4s linear;
+    transition: transform 0.4s;
     transform: scaleY(0);
     float:left;
     display:block;
+    color: #999999;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
 }
 
 .open .accordion-item-content{
