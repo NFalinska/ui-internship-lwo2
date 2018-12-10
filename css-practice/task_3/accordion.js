@@ -1,10 +1,13 @@
 /* global document */
-const accItem = document.getElementsByClassName('accordion-item');
-const accHead = document.getElementsByClassName('accordion-item-heading');
-for (let i = 0; i < accHead.length; i++) {
-  accHead[i].addEventListener('click', toggleItem, false);
-}
+(function accordion() {
+  const accHead = document.getElementsByClassName('accordion-item-heading');
+  for (let i = 0; i < accHead.length; i++) {
+    accHead[i].addEventListener('click', toggleItem, false);
+  }
+})();
+
 function toggleItem() {
+  const accItem = document.getElementsByClassName('accordion-item');
   let itemClass = this.parentNode.className;
   for (let i = 0; i < accItem.length; i++) {
     accItem[i].className = 'accordion-item close';
