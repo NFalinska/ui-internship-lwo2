@@ -228,6 +228,10 @@
       }
   }
 
+  .tab-image {
+      display: none;
+  }
+
   .quotes {
     display: none;
   }
@@ -326,6 +330,10 @@ img {
 
 .work {
   margin-left: 55px;
+}
+
+.inputs {
+    margin-right: 90px;
 }
 }
 
@@ -468,7 +476,8 @@ footer {
          }
 
          .inputs {
-             margin-left: 0px;
+             margin-left: 10px;
+             margin-right: 40px;
 
              input {
               width: 380px;

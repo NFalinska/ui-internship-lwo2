@@ -94,7 +94,8 @@ header {
     position: fixed;
     padding-bottom: 30px;
     padding-right: 134px;
-    z-index: 2; }
+    z-index: 2;
+    width: 100%; }
   header .title {
     font-size: 72px; }
   header .main-title {
@@ -773,6 +774,8 @@ footer {
     padding-top: 4px;
     padding-right: 15px;
     display: flex; }
+  .tab-image {
+    display: none; }
   .quotes {
     display: none; }
   .reviews {
@@ -824,6 +827,8 @@ footer {
     display: none; }
   .what-we-do .work {
     margin-left: 55px; }
+  .what-we-do .inputs {
+    margin-right: 90px; }
   .team {
     padding-bottom: 0px; }
   .partners {
@@ -900,7 +905,8 @@ footer {
   .what-we-do .work {
     margin-left: 18px; }
   .what-we-do .inputs {
-    margin-left: 0px; }
+    margin-left: 10px;
+    margin-right: 40px; }
     .what-we-do .inputs input {
       width: 380px; }
   .quotes {
@@ -1086,18 +1092,10 @@ footer {
   text-transform: uppercase;
   border: 1px solid #e5e5e5; }
 
-.closed {
-  height: 0;
-  transition: .3s; }
-
-.accordion-item-content p {
-  padding: 20px; }
-
 .close .accordion-item-content {
   height: 0px;
   opacity: 0;
   transition: 0.4s;
-  display: block;
   color: #999999;
   font-family: Roboto;
   font-style: italic;
@@ -1105,11 +1103,8 @@ footer {
   overflow: hidden; }
 
 .open .accordion-item-content {
-<<<<<<< HEAD
   overflow: hidden;
   padding: 20px;
-=======
->>>>>>> 43b09d6dc10a54d7058f07b101c8335157653160
   background-color: #fff;
   border: 1px solid #ddd;
   color: #999999;
@@ -1118,7 +1113,6 @@ footer {
   font-size: 15px;
   line-height: 24px;
   margin: 0px 0px 10px 0px;
-  display: block;
   transition: 0.4s;
   box-sizing: border-box;
   height: 150px; }
