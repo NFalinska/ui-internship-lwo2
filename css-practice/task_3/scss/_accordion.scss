@@ -12,17 +12,28 @@
     border: 1px solid #e5e5e5;
 }
 
-.close .accordion-item-content{
-    height:0px;
-    transition:height 1s ease-out;
-    transform: scaleY(0);
-    float:left;
+.accordion-item-content p {
+  padding: 20px;
+}
+
+.close .accordion-item-content {
+    height: 0px;
+    opacity: 0;
+    transition: 0.4s;
     display:block;
+    color: #999999;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 15px;
+    overflow: hidden;
 }
 
 .open .accordion-item-content{
+<<<<<<< HEAD
     overflow: hidden;
     padding: 20px;
+=======
+>>>>>>> 43b09d6dc10a54d7058f07b101c8335157653160
     background-color: #fff;
     border: 1px solid #ddd;
     color: #999999;
@@ -32,10 +43,9 @@
     line-height: 24px;
     margin: 0px 0px 10px 0px;
     display:block;
-    transform: scaleY(1);
-    transform-origin: top;
-    transition: transform 0.4s ease;
+    transition:  0.4s;
     box-sizing: border-box;
+    height: 150px;
 }
 
 .open .accordion-item-heading{
