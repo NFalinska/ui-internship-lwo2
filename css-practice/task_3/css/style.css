@@ -94,8 +94,7 @@ header {
     position: fixed;
     padding-bottom: 30px;
     padding-right: 134px;
-    z-index: 2;
-    width: 100%; }
+    z-index: 2; }
   header .title {
     font-size: 72px; }
   header .main-title {
