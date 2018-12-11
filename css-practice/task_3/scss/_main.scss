@@ -115,7 +115,7 @@
           border: none;
           position: fixed;
           padding-bottom: 30px;
-          padding-right: 102px;
+          padding-right: 134px;
           z-index: 2;
       }
   
@@ -131,6 +131,7 @@
       }
   
       .pages {
+          display: flex;
           margin-left: 446px;
           padding-top: 4px;
           word-spacing: 1px;

@@ -91,7 +91,7 @@ header {
     border: none;
     position: fixed;
     padding-bottom: 30px;
-    padding-right: 102px;
+    padding-right: 134px;
     z-index: 2; }
   header .title {
     font-size: 72px; }
@@ -101,6 +101,7 @@ header {
     line-height: 140px;
     letter-spacing: -6px; }
   header .pages {
+    display: flex;
     margin-left: 446px;
     padding-top: 4px;
     word-spacing: 1px; }
@@ -1084,7 +1085,7 @@ footer {
 
 .close .accordion-item-content {
   height: 0px;
-  transition: height, transform 0.4s linear;
+  transition: transform 0.4s;
   transform: scaleY(0);
   float: left;
   display: block;
