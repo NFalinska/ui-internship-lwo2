@@ -1,30 +1,38 @@
 /* global document */
-const accItem = document.getElementsByClassName('accordion-item');
-const accHead = document.getElementsByClassName('accordion-item-heading');
-for (let i = 0; i < accHead.length; i++) {
-  accHead[i].addEventListener('click', toggleItem, false);
-}
-function toggleItem() {
-  let itemClass = this.parentNode.className;
-  for (let i = 0; i < accItem.length; i++) {
-    accItem[i].className = 'accordion-item close';
+(function accordion() {
+  const accHead = document.getElementsByClassName('accordion-item-heading');
+  for (let i = 0; i < accHead.length; i++) {
+    accHead[i].addEventListener('click', toggleItem, false);
   }
-  if (itemClass == 'accordion-item close') {
-    this.parentNode.className = 'accordion-item open';
+})();
+function toggleItem() {
+  this.isOpened = this.parentNode.classList.contains('open');
+
+  const closeItem = (node) => {
+    node.classList.remove('open');
+    node.classList.add('close');
+  };
+
+  const _toArray = (list) => [].slice.call(list);
+
+  const array = _toArray(document.getElementsByClassName('accordion-item'));
+
+  array.forEach(closeItem);
+
+  if (this.isOpened) {
+    closeItem(this.parentNode);
+  } else {
+    this.parentNode.classList.add('open');
+    this.parentNode.classList.remove('close');
   }
 }
 
 document.querySelector('.tabs-header').addEventListener('click', changeTabs);
 
 function changeTabs(event) {
-  const dataTab = event.target.getAttribute('data-tab');
-  const noActive = document.getElementsByClassName('accordion-item-heading');
-  const tabBody = document.getElementsByClassName('tab-b');
   if (event.target.className == 'accordion-item-heading') {
-    for (let i = 0; i < noActive.length; i++) {
-      noActive[i].classList.remove('current');
-    }
-    event.target.classList.add('current');
+    const dataTab = event.target.getAttribute('data-tab');
+    const tabBody = document.getElementsByClassName('tab-b');
     for (let i = 0; i < tabBody.length; i++) {
       if (dataTab == i) {
         tabBody[i].style.display = 'block';

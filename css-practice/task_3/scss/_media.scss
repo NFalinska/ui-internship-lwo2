@@ -47,6 +47,7 @@
   .reviews {
       padding-right: 0px;
       padding-left: 0px;
+      display: none;
   }
     .services {
       .silver-line {
@@ -185,6 +186,7 @@
      }
  }
 }
+
 @media only screen and (max-width: 1340px) {
     .partners {
         display: none;
@@ -194,6 +196,7 @@
         display: none;
     }
 }
+
 @media only screen and (max-width: 768px) {
   header {
       .slider {
@@ -223,6 +226,10 @@
         padding-right: 15px;
         display: flex;
       }
+  }
+
+  .tab-image {
+      display: none;
   }
 
   .quotes {
@@ -323,6 +330,10 @@ img {
 
 .work {
   margin-left: 55px;
+}
+
+.inputs {
+    margin-right: 90px;
 }
 }
 
@@ -465,7 +476,8 @@ footer {
          }
 
          .inputs {
-             margin-left: 0px;
+             margin-left: 10px;
+             margin-right: 40px;
 
              input {
               width: 380px;
