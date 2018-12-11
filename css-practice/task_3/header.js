@@ -1,6 +1,9 @@
 /* global document, window, pageYOffset */
-window.addEventListener('scroll', function() {
+(function() {
   const header = document.getElementsByTagName('nav')[0];
-  pageYOffset > 0 ? header.classList.add('fixed-header')
-: header.classList.remove('fixed-header');
-});
+  window.addEventListener('scroll', function() {
+    pageYOffset > 0 ? header.classList.add('fixed-header')
+  : header.classList.remove('fixed-header');
+  });
+})();
+
