@@ -12,15 +12,10 @@
     border: 1px solid #e5e5e5;
 }
 
-.accordion-item-content p {
-  padding: 20px;
-}
-
 .close .accordion-item-content {
     height: 0px;
     opacity: 0;
     transition: 0.4s;
-    display:block;
     color: #999999;
     font-family: Roboto;
     font-style: italic;
@@ -29,6 +24,8 @@
 }
 
 .open .accordion-item-content{
+    overflow: hidden;
+    padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
     color: #999999;
@@ -37,7 +34,6 @@
     font-size: 15px;
     line-height: 24px;
     margin: 0px 0px 10px 0px;
-    display:block;
     transition:  0.4s;
     box-sizing: border-box;
     height: 150px;
