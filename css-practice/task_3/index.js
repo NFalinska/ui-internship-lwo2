@@ -13,7 +13,6 @@ function render(res) {
   }
 }
 
-
 function renderBlogsItem(result) {
   const {
     previewImg,
@@ -90,7 +89,6 @@ function _formatDate(dateISO) {
     day: date.getDate(),
   };
 }
-
 
 (function fetchData() {
   fetch('http://localhost:3000/api/blogs').then((res) => res.json()).then((res) => {
