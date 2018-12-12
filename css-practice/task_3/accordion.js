@@ -34,11 +34,7 @@ function changeTabs(event) {
     const dataTab = event.target.getAttribute('data-tab');
     const tabBody = document.getElementsByClassName('tab-b');
     for (let i = 0; i < tabBody.length; i++) {
-      if (dataTab == i) {
-        tabBody[i].style.display = 'block';
-      } else {
-        tabBody[i].style.display = 'none';
-      }
+      tabBody[i].style.display = dataTab == i ? 'block' : 'none';
     }
   }
 }
