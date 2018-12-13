@@ -3,17 +3,23 @@
 function render(res) {
   const result = res.blogs;
   const latest = res.latest;
+  const latestContainerFragment = document.createDocumentFragment();
+  const footerContainerFragment = document.createDocumentFragment();
+  const blogsContainer = document.querySelector('.stories .pics');
+  const latestsContainer = document.querySelector('.blocks .block-two');
   for (let i = 0; i < result.length; i++) {
     if (latest.indexOf(result[i].id) == -1) {
-      renderBlogsItem(result[i]);
+      latestContainerFragment.appendChild(createBlogsItem(result[i]));
     }
     if (latest.indexOf(result[i].id) > 0) {
-      renderLatestItem(result[i]);
+      footerContainerFragment.appendChild(createLatestItem(result[i]));
     }
   }
+  latestsContainer.appendChild(footerContainerFragment);
+  blogsContainer.appendChild(latestContainerFragment);
 }
 
-function renderBlogsItem(result) {
+function createBlogsItem(result) {
   const {
     previewImg,
     title,
@@ -26,7 +32,7 @@ function renderBlogsItem(result) {
     month,
     day,
   } = _formatDate(published);
-  const blogs = document.querySelector('.stories .pics');
+
   const element = document.createElement('DIV');
   element.classList.add('pic-item');
 
@@ -51,10 +57,10 @@ function renderBlogsItem(result) {
 </div>
 `;
   element.innerHTML = blog;
-  blogs.append(element);
+  return element;
 }
 
-function renderLatestItem(result) {
+function createLatestItem(result) {
   const {
     previewImg,
     title,
@@ -66,7 +72,6 @@ function renderLatestItem(result) {
     day,
   } = _formatDate(published);
 
-  const latests = document.querySelector('.blocks .block-two');
   const el = document.createElement('DIV');
   el.classList.add('blog-item');
   const latestBlog = `
@@ -78,7 +83,7 @@ function renderLatestItem(result) {
   </div>
 `;
   el.innerHTML = latestBlog;
-  latests.append(el);
+  return el;
 }
 
 function _formatDate(dateISO) {
