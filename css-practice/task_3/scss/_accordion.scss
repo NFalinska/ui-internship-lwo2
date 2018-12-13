@@ -1,0 +1,82 @@
+.accordion-item-heading{
+    position: relative;
+    display: flex;
+    cursor:pointer;
+    margin:0px 0px 10px 0px;
+    padding:10px;
+    box-sizing: border-box;
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid #e5e5e5;
+}
+
+.close .accordion-item-content {
+    height: 0px;
+    opacity: 0;
+    transition: 0.4s;
+    color: #999999;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.open .accordion-item-content{
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #999999;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0px 0px 10px 0px;
+    transition:  0.4s;
+    box-sizing: border-box;
+    height: 150px;
+}
+
+.open .accordion-item-heading{
+    margin-bottom: 12px;
+    color: #7f8c8d;
+}
+
+.title-accardion {
+    margin-left: 20px;
+    z-index: -1;
+}
+
+i {
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
+    z-index: -1;
+}
+
+.little-photo {
+    z-index: -1;
+}
+
+.tab-b {
+        display: block;
+        animation: animate 2s ease;
+      }
+    
+       @keyframes animate {
+        0% {
+            display: none;
+            opacity: 0;
+        }
+         1% {
+            display: block;
+            opacity: 0;
+        }
+         100% {
+            display: block;
+            opacity: 1;
+        }
+    }

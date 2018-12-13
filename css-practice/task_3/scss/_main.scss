@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   .container {
      max-width: 1440px;
      margin: auto;
@@ -11,10 +16,12 @@
       text-align: center;
    }
   
-   .title {
+  .title {
       font-family: "Kaushan Script";
       font-size: 24px;
+      padding-top: 160px;
   }
+
   .main-title {
       font-family: $mainFont;
       font-weight: 700;
@@ -45,10 +52,12 @@
       opacity: 1;
       transition: 0.3s;
     }
+
      .big {
       width: 100%;
     }
   }
+
   .invisible {
     position: absolute;
     width: 100%;
@@ -81,22 +90,35 @@
       color: $mainColor;
   
       nav {
-      display: flex;
-      padding: 28px 0px 158px 120px; 
-  
-      a {
-      color: $mainColor;
-      font-family: $mainFont;
-      font-size: 14px;
-      text-transform: uppercase;
-      text-decoration: none;
-
-      &:hover {
-        color: #fce38a; 
-        border-bottom: 2px solid #fce38a;
-        padding-bottom: 12px;
-      }
-      }
+        display: flex;
+        padding: 28px 0px 158px 120px; 
+        max-width: 1440px;
+        padding-right: 102px;
+        margin: auto;
+        position: fixed;
+    
+        a {
+        color: $mainColor;
+        font-family: $mainFont;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+    
+        &:hover {
+          color: #fce38a; 
+          border-bottom: 2px solid #fce38a;
+          padding-bottom: 12px;
+            }
+          }
+        }
+    
+        .fixed-header  {
+          background-color: rgba(232, 131, 130, 0.8);
+          border: none;
+          position: fixed;
+          padding-bottom: 30px;
+          padding-right: 134px;
+          z-index: 2;
       }
   
       .title {
@@ -111,6 +133,7 @@
       }
   
       .pages {
+          display: flex;
           margin-left: 446px;
           padding-top: 4px;
           word-spacing: 1px;
@@ -119,9 +142,10 @@
           }
       }
      
-      button {
+      .learn {
       width: 160px;
-      height: 40px;
+      padding: 10px;
+      margin: auto;
       border: 3px solid $mainColor;
       color: $mainColor;
       font-family: $mainFont;
@@ -147,14 +171,16 @@
           font-family: $mainFont;
           font-size: 24px;
           font-weight: 700;
-      }
+         }
       }
   }
   
   .about {
+
       .title {
           padding: 86px 6px 10px 0px;
       }
+
       .main-title {
           padding: 0px 10px 20px 8px;
       }
@@ -316,13 +342,13 @@
           display: flex;
           margin-top: 86px;
           margin-left: 118px;
-  
       }
   
       .inputs {
           display: flex;
           flex-direction: column;
           margin-left: 28px;
+          margin-right: 50px;
   
           input {
               width: 600px;
@@ -373,8 +399,7 @@
             background-position-x: 14px;
             background-position-y: 12px;
             background-repeat: no-repeat; 
-        }
-      
+        }     
     }
 }
   
@@ -382,7 +407,7 @@
       padding-top: 74px;
       display: flex;
       background-color: #f8f8f8;
-      padding: 0px 146px 68px 142px;
+      padding: 46px 146px 68px 142px;
 
       
       .arrow {
@@ -493,8 +518,8 @@
   }
   
   .reviews {
+      padding: 95px 146px 124px 142px;
       display: flex;
-      padding: 95px 146px 125px 142px;
   
        .img-quotes {
       padding: 6px 29px 0px 44px;
@@ -515,6 +540,7 @@
           line-height: 36px;
           padding-bottom: 6px;
       }
+
       .author { 
           color: $titleColor;
           font-family: "Kaushan Script";
@@ -604,6 +630,7 @@
   
   .stories {
       padding-bottom: 110px;
+
       .title {
           padding-top: 104px; 
           padding-bottom: 10px;
@@ -693,7 +720,6 @@
           padding-top: 4px;
           padding-bottom: 11px;
       }
-  
   }
   
   .map {
@@ -702,6 +728,7 @@
       display: flex;
       justify-content: center;
       text-align: center;
+
       .map-text {
           color: $colorDecor;
           font-family: $mainFont;
@@ -733,7 +760,6 @@
           display: flex;
           flex-direction: column;
       }
-
       .block-two {
         height: 400px;
         overflow-y: auto;
@@ -741,6 +767,7 @@
       .block-one {
           margin-right: 48px;
       }
+
       .title-blog{
           color: $titleColor;
           font-family: $mainFont;
@@ -774,6 +801,7 @@
           font-weight: 700;
           text-transform: uppercase;
       }
+
       input {
           width: 230px;
           height: 36px;
@@ -798,7 +826,6 @@
           display: flex;
           flex-direction: column;
           padding-top: 18px;
-  
       }
   
       .title-item {
@@ -832,6 +859,7 @@
       .insta {
         display: flex;
         flex-direction: column;
+
         img {
             margin: 1px;
         }
@@ -850,10 +878,11 @@
           font-family: $mainFont;
           font-size: 14px;
           padding-bottom: 15px;
-    span {
-      font-size: 18px;
-      font-weight: 700;
-    }
+
+      span {
+         font-size: 18px;
+         font-weight: 700;
+        }
       }
   
       .follow {
@@ -871,7 +900,8 @@
       .icons {
            display: flex;
            padding-top: 2px;
-           margin-left: 6px;     
+           margin-left: 6px; 
+
            img {
               margin-left: 15px;
            }
@@ -882,6 +912,7 @@
         color: $titleColor;
         font-family: $mainFont;
         font-size: 14px;
+
         span {
             color: $colorDecor;
         }

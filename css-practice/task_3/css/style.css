@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 .container {
   max-width: 1440px;
   margin: auto; }
@@ -11,7 +14,8 @@
 
 .title {
   font-family: "Kaushan Script";
-  font-size: 24px; }
+  font-size: 24px;
+  padding-top: 160px; }
 
 .main-title {
   font-family: "Montserrat", sans-serif;
@@ -69,7 +73,11 @@ header {
   color: #ffffff; }
   header nav {
     display: flex;
-    padding: 28px 0px 158px 120px; }
+    padding: 28px 0px 158px 120px;
+    max-width: 1440px;
+    padding-right: 102px;
+    margin: auto;
+    position: fixed; }
     header nav a {
       color: #ffffff;
       font-family: "Montserrat", sans-serif;
@@ -80,6 +88,13 @@ header {
         color: #fce38a;
         border-bottom: 2px solid #fce38a;
         padding-bottom: 12px; }
+  header .fixed-header {
+    background-color: rgba(232, 131, 130, 0.8);
+    border: none;
+    position: fixed;
+    padding-bottom: 30px;
+    padding-right: 134px;
+    z-index: 2; }
   header .title {
     font-size: 72px; }
   header .main-title {
@@ -88,14 +103,16 @@ header {
     line-height: 140px;
     letter-spacing: -6px; }
   header .pages {
+    display: flex;
     margin-left: 446px;
     padding-top: 4px;
     word-spacing: 1px; }
     header .pages a {
       margin-left: 50px; }
-  header button {
+  header .learn {
     width: 160px;
-    height: 40px;
+    padding: 10px;
+    margin: auto;
     border: 3px solid #ffffff;
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
@@ -235,7 +252,8 @@ header {
   .what-we-do .inputs {
     display: flex;
     flex-direction: column;
-    margin-left: 28px; }
+    margin-left: 28px;
+    margin-right: 50px; }
     .what-we-do .inputs input {
       width: 600px;
       height: 56px;
@@ -283,7 +301,7 @@ header {
   padding-top: 74px;
   display: flex;
   background-color: #f8f8f8;
-  padding: 0px 146px 68px 142px; }
+  padding: 46px 146px 68px 142px; }
   .quotes .arrow {
     display: flex;
     justify-content: center;
@@ -363,8 +381,8 @@ header {
   display: flex; }
 
 .reviews {
-  display: flex;
-  padding: 95px 146px 125px 142px; }
+  padding: 95px 146px 124px 142px;
+  display: flex; }
   .reviews .img-quotes {
     padding: 6px 29px 0px 44px; }
   .reviews .quote-info {
@@ -672,7 +690,8 @@ footer {
     display: none; }
   .reviews {
     padding-right: 0px;
-    padding-left: 0px; }
+    padding-left: 0px;
+    display: none; }
   .services .silver-line {
     display: none; }
   .services .services-blocks {
@@ -699,7 +718,16 @@ footer {
   .what-we-do img {
     display: none; }
   .what-we-do .work {
-    margin-left: 155px; }
+    margin-left: 155px;
+    flex-wrap: wrap; }
+  .what-we-do .tab-image {
+    margin-left: 55px; }
+  .what-we-do .inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 28px;
+    margin-right: 215px;
+    padding-top: 20px; }
   .team {
     padding-bottom: 0px; }
   .partners {
@@ -761,6 +789,12 @@ footer {
     padding-top: 4px;
     padding-right: 15px;
     display: flex; }
+  .tab-image {
+    display: none; }
+  .quotes {
+    display: none; }
+  .reviews {
+    display: none; }
   .about .pics img {
     padding-bottom: 20px; }
   .about .text-item {
@@ -808,6 +842,8 @@ footer {
     display: none; }
   .what-we-do .work {
     margin-left: 55px; }
+  .what-we-do .inputs {
+    margin-right: 90px; }
   .team {
     padding-bottom: 0px; }
   .partners {
@@ -884,7 +920,8 @@ footer {
   .what-we-do .work {
     margin-left: 18px; }
   .what-we-do .inputs {
-    margin-left: 0px; }
+    margin-left: 10px;
+    margin-right: 40px; }
     .what-we-do .inputs input {
       width: 380px; }
   .quotes {
@@ -999,3 +1036,131 @@ footer {
     width: 168px; }
   footer button {
     width: 110px; } }
+
+.gallery-img {
+  cursor: pointer;
+  transition: 0.3s; }
+
+.gallery-img:hover {
+  opacity: 0.7; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  padding-top: 30px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center; }
+
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s; }
+
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+.wrap-quotes, .wrap-reviews {
+  width: 100%;
+  overflow: hidden; }
+
+.wrap-slider-one, .wrap-slider-two {
+  display: flex;
+  width: 100%; }
+
+.slide-content-one, .slide-content-two {
+  width: 1100px;
+  display: flex; }
+
+.transition {
+  transition: transform 0.4s; }
+
+.arrow-right-one, .arrow-left-one, .arrow-right-two, .arrow-left-two {
+  cursor: pointer; }
+
+.scroller {
+  display: flex; }
+
+#review_slider, #quotes_slider {
+  overflow: hidden;
+  display: flex; }
+
+.accordion-item-heading {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5; }
+
+.close .accordion-item-content {
+  height: 0px;
+  opacity: 0;
+  transition: 0.4s;
+  color: #999999;
+  font-family: Roboto;
+  font-style: italic;
+  font-size: 15px;
+  overflow: hidden; }
+
+.open .accordion-item-content {
+  overflow: hidden;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #999999;
+  font-family: Roboto;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0px 0px 10px 0px;
+  transition: 0.4s;
+  box-sizing: border-box;
+  height: 150px; }
+
+.open .accordion-item-heading {
+  margin-bottom: 12px;
+  color: #7f8c8d; }
+
+.title-accardion {
+  margin-left: 20px;
+  z-index: -1; }
+
+i {
+  padding-top: 10px;
+  position: absolute;
+  right: 0;
+  margin-right: 25px;
+  z-index: -1; }
+
+.little-photo {
+  z-index: -1; }
+
+.tab-b {
+  display: block;
+  animation: animate 2s ease; }
+
+@keyframes animate {
+  0% {
+    display: none;
+    opacity: 0; }
+  1% {
+    display: block;
+    opacity: 0; }
+  100% {
+    display: block;
+    opacity: 1; } }

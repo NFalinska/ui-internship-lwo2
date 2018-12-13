@@ -6,8 +6,8 @@
     "test": "jest",
     "lint": "./node_modules/.bin/eslint tasks/**/*.js",
     "tdd": "jest --watch",
-    "watch:sass": "node-sass -w css-practice/task_3/scss/ -o css-practice/task_3/css/",
-    "compile:sass": "node-sass css-practice/task_3/scss -o css-practice/task_3/css/"
+    "watch:sass": "node-sass -w css-practice/task_2/scss/ -o css-practice/task_2/css/",
+    "compile:sass": "node-sass css-practice/task_2/scss -o css-practice/task_2/css/"
   },
   "husky": {
     "hooks": {
@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "node-sass": "^4.10.0",
-    "sass": "^1.14.3"
+    "sass": "^1.15.1"
   }
 }

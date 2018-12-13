@@ -12,10 +12,13 @@
       <div class="container">
          <header>
             <div class="main-info">
-               <h1>There is no other</h1>
-               <h1>platforms for you as like</h1>
-               <img src="img/play@3x.png" alt="play" class="play"> 
-               <button type="button">TRY NOW</button>
+               <h1>  There is no other<br>
+               platforms for you as like</h1>
+               <div class="play" id="play"> </div>
+               <video id='my-video' muted loop>
+                  <source src="Summer_Place_Flyby/Summer_Place_Flyby.mp4" type="video/mp4">
+               </video>
+               <button type="button" class="try">TRY NOW</button>
                <div class="cards-details">* No need to add cards details</div>
             </div>
          </header>
@@ -114,19 +117,39 @@
             <div class="label">NEW FEATURES</div>
             <h2>Over 1000 designers are using ...</h2>
             <div class="limit">30 days free trial for all.</div>
-            <div class="inputs">
-               <input placeholder="FULL NAME"/>
-               <input placeholder="YOUR EMAIL"/>
-               <input placeholder="PASSWORD"/>
-               <button type="button">TRY NOW</button>
-            </div>
+            <form  name="main-form" action="" onsubmit="return validate()" method="POST" class="inputs" >
+               <input 
+                  type="text" 
+                  name="user_name" 
+                  id="user_name" 
+                  placeholder="FULL NAME" 
+                  pattern="^[a-zA-Z]+$"
+                  title="Username should only contain latin letters. e.g. John"
+                  required>
+               <input 
+                  type="email" 
+                  name="user_mail" 
+                  id="user_mail"
+                  placeholder="YOUR EMAIL"
+                  pattern="^[^@]+@[^@]+\.[^@]+$"
+                  title="e.g. youremail@com"
+                  required>
+               <input 
+                  type="password" 
+                  name="user_password" 
+                  id="user_password" 
+                  placeholder="PASSWORD"
+                  pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[#?!@$%^&*-]).{6,}$"
+                  title="Password should only contain latin letters, 1 capital letter, 1 lower case, 1 digit, 1 special character"
+                  required>
+               <button type="submit" class="disabled" id="send-btn">TRY NOW</button>
+            </form>
             <div class="services">
                By Signing up you agree to our <span>terms & Services.</span>
             </div>
          </section>
          <footer>
             <div class="supports">
-               <!-- <div class="footer-info"> -->
                <div>
                   <div class="support"><img src="img/start-ex.png" alt="start"></div>
                   <div class="add">
@@ -152,7 +175,6 @@
                      <div>Privacy Policy</div>
                   </div>
                </div>
-               <!-- </div> -->
                <div>
                   <div class="support">Get Newsletter</div>
                   <div class="input-wrapper"><input placeholder="EMAIL" class="newsletter"/></div>
@@ -166,5 +188,6 @@
             </div>
          </footer>
       </div>
+      <script type="module" src="main.js"></script>
    </body>
 </html>

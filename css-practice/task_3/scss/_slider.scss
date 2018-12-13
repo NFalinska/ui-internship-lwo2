@@ -1,0 +1,31 @@
+.wrap-quotes, .wrap-reviews {
+	width: 100%;
+	overflow: hidden;
+}
+
+.wrap-slider-one, .wrap-slider-two {
+	display: flex;
+	width: 100%;
+}
+
+.slide-content-one, .slide-content-two {
+    width: 1100px;
+    display: flex;
+}
+
+.transition {
+	transition: transform 0.4s;
+}
+
+.arrow-right-one, .arrow-left-one, .arrow-right-two, .arrow-left-two {
+    cursor: pointer;
+}
+
+.scroller {
+	display: flex;
+}
+
+#review_slider, #quotes_slider {
+	overflow: hidden;
+	display: flex;
+}

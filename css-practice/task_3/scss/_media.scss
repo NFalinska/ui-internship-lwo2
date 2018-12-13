@@ -21,6 +21,7 @@
         }
     }
 
+
     .about {
       .pics {
         img {
@@ -46,6 +47,7 @@
   .reviews {
       padding-right: 0px;
       padding-left: 0px;
+      display: none;
   }
     .services {
       .silver-line {
@@ -96,6 +98,19 @@
 
   .work {
       margin-left: 155px;
+      flex-wrap: wrap;
+  }
+
+  .tab-image {
+      margin-left: 55px;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 28px;
+    margin-right: 215px;
+    padding-top: 20px;
   }
 }
 
@@ -171,6 +186,7 @@
      }
  }
 }
+
 @media only screen and (max-width: 1340px) {
     .partners {
         display: none;
@@ -180,6 +196,7 @@
         display: none;
     }
 }
+
 @media only screen and (max-width: 768px) {
   header {
       .slider {
@@ -209,6 +226,18 @@
         padding-right: 15px;
         display: flex;
       }
+  }
+
+  .tab-image {
+      display: none;
+  }
+
+  .quotes {
+    display: none;
+  }
+
+  .reviews {
+    display: none;
   }
 
   .about {
@@ -301,6 +330,10 @@ img {
 
 .work {
   margin-left: 55px;
+}
+
+.inputs {
+    margin-right: 90px;
 }
 }
 
@@ -443,7 +476,8 @@ footer {
          }
 
          .inputs {
-             margin-left: 0px;
+             margin-left: 10px;
+             margin-right: 40px;
 
              input {
               width: 380px;
